@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Aleo");
+
+:root {
+  font-family: "Aleo", sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: rgb(119, 13, 13);
+  background: radial-gradient(
+    circle,
+    rgba(119, 13, 13, 0.92) 64%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  overflow-x: hidden;
+  color: white;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.label {
+  font-size: 2.2rem;
+  background: url("https://res.cloudinary.com/nikita-rudenko/image/upload/v1544906837/stripe_c982eebe592d6c30f2034f5ce80b1fc6.png");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveBg 30s linear infinite;
+}
+
+@keyframes moveBg {
+  0% {
+    background-position: 0% 30%;
+  }
+  100% {
+    background-position: 1000% 500%;
+  }
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  user-select: none;
+  display: flex;
+}
+
+.counter  {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.time {
+  color: #d99c3b;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+} 
+
+.time span {
+  padding: 0 14px;
+  font-size: 0.8rem;
+}
+
+.time span div {
+  font-size: 3rem;
+}
+
+.button {
+  margin: 1rem;
+  font-size: 2rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #d99c3b; 
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  .title{
+    text-align: center;
+    width: 100%;
+    h2{
+      position: relative;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 700;
+      span{
+        color: rgba(217, 156, 59);
+      }
+      .bg-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 70%;
+        color: rgba(217, 156, 59, 0.2);
+        z-index: -1;
+        transition: all 0.4s ease-in-out;
+        transform: translate(-50%, -50%);
+        font-weight: 800;
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .img{
+    width: 60%;
+    cursor: pointer;
+    img{
+      width: 100%;
+      max-height: 150px;
+      max-width: 300px;
+      border-radius: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 5px 5px 12px;
+    }
+  }
+  .text{
+    margin: 1rem;
+    font-size: 1rem;
+    color: #d99c3b;
+    width: 90%;
+    text-align: center;
+  }
+  .skills{
+    color: #d99c3b;
+    width: 90%;
+    text-align: left;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    li{
+      cursor: pointer;
+      transition: 0.4s all ease-in-out;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .label {
+    font-size: 1.7rem;
+  }
+  .time span {
+    padding: 0 16px;
+    font-size: 0.6rem;
+  }
+  .time span div {
+    font-size: 2rem;
+  }
+  .button{
+    margin: 0.5rem;
+    font-size: 1.25rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .middle{
+    flex-direction: column;
+  }
+  .text{
+    font-size: 0.5rem;
+  }
+  .img{
+    display: none;
+  }
+}
+
+
