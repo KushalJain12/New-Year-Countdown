@@ -69,7 +69,10 @@ canvas {
   text-transform: uppercase;
   display: flex;
   justify-content: center;
-} 
+  border: 0.2rem solid #d99c3b;
+  padding: 1rem;
+  border-radius: 1rem;
+}
 
 .time span {
   padding: 0 14px;
@@ -138,7 +141,7 @@ canvas {
   }
   .text{
     margin: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #d99c3b;
     width: 90%;
     text-align: center;
@@ -147,8 +150,8 @@ canvas {
     color: #d99c3b;
     width: 90%;
     text-align: left;
-    font-size: 1.1rem;
-    text-transform: capitalize;
+    font-size: 1.15rem;
+    /* text-transform: capitalize; */
     li{
       cursor: pointer;
       transition: 0.4s all ease-in-out;

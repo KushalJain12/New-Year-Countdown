@@ -3,10 +3,6 @@
 ## Overview
 This project is a web-based New Year countdown timer that also features a falling snowflake animation. It consists of three main components:
 
-1. **HTML**: Defines the structure and content of the webpage.
-2. **CSS**: Provides the visual styling, including animations and responsive design.
-3. **JavaScript**: Implements dynamic functionalities like the countdown timer and snowflake animation.
-
 ---
 
 ## Files and Their Functions
@@ -63,21 +59,9 @@ This file manages dynamic behaviors and animations. Major functionalities includ
 ---
 
 ## Features
-- Fully responsive design for different screen sizes.
+- Fully responsive design for both desktop and mobile.
 - Smooth animations for snowflakes and shimmering text.
 - Real-time countdown to the New Year.
 
 ---
-
-## Setup
-To run the project:
-1. Clone or download the repository.
-2. Open `index.html` in any modern browser.
-
----
-
-## Future Enhancements
-- Add customization options for themes or snowflake properties.
-- Provide an option to set custom countdown dates.
-- Include celebratory animations or sound effects when the countdown ends.
 
